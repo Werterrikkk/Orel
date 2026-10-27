@@ -1,0 +1,509 @@
+{
+  "evaluated_at": "2026-10-21T10:07:19.914747+00:00",
+  "model": "YOLO26n fine-tuned for person/helmet/vest",
+  "weights_sha256": "166f3a7a9438e3d346167b1e2aae3ec4b38eb5aef2ded148083b81e50bae7275",
+  "classes": {
+    "0": "person",
+    "1": "helmet",
+    "2": "vest"
+  },
+  "metrics": {
+    "metrics/precision(B)": 0.9032632173004943,
+    "metrics/recall(B)": 0.8424152111417471,
+    "metrics/mAP50(B)": 0.8971988597887529,
+    "metrics/mAP50-95(B)": 0.5221471003830428,
+    "fitness": 0.5221471003830428
+  },
+  "per_class": {
+    "person": {
+      "precision": 0.8563630554116076,
+      "recall": 0.8084096161555941,
+      "AP50": 0.8392413850209759,
+      "AP50_95": 0.49292547277599513
+    },
+    "helmet": {
+      "precision": 0.943888884096034,
+      "recall": 0.876139388056164,
+      "AP50": 0.9293179255213335,
+      "AP50_95": 0.5110339101531183
+    },
+    "vest": {
+      "precision": 0.9095377123938408,
+      "recall": 0.8426966292134831,
+      "AP50": 0.923037268823949,
+      "AP50_95": 0.5624819182200147
+    }
+  },
+  "dataset": {
+    "method": "64-bit DCT perceptual hash; Hamming distance <= 8",
+    "excluded": [
+      {
+        "split": "train",
+        "name": "image1011.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1048.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1050.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1052.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1059.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1056.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1062.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1058.jpg"
+      },
+      {
+        "split": "val",
+        "name": "image1072.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1075.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1073.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1084.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1086.jpg"
+      },
+      {
+        "split": "val",
+        "name": "image1083.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1082.jpg"
+      },
+      {
+        "split": "val",
+        "name": "image1085.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1080.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1077.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image515.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1092.jpg"
+      },
+      {
+        "split": "val",
+        "name": "image1091.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1087.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1102.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1097.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1095.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1112.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1104.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1108.jpg"
+      },
+      {
+        "split": "val",
+        "name": "image1107.jpg"
+      },
+      {
+        "split": "val",
+        "name": "image1109.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1106.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image376.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image52.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image397.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image120.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image36.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image90.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image71.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image290.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image429.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image45.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image42.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1079.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image33.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image301.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image503.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1038.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1025.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image268.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image20.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image102.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image76.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image123.jpg"
+      },
+      {
+        "split": "val",
+        "name": "image31.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image408.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image24.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image73.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image47.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image79.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image7.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image156.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image217.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image420.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image504.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image693.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image685.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image684.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image730.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image869.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image877.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image889.jpg"
+      },
+      {
+        "split": "val",
+        "name": "image885.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image890.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image888.jpg"
+      },
+      {
+        "split": "val",
+        "name": "image942.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image944.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image953.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image941.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image954.jpg"
+      },
+      {
+        "split": "val",
+        "name": "image955.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1001.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1018.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1020.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1026.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1027.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1028.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1022.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1063.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image1113.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image364.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image388.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image690.jpg"
+      },
+      {
+        "split": "val",
+        "name": "image669.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image681.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image713.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image716.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image833.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image937.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image857.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image949.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image936.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image952.jpg"
+      },
+      {
+        "split": "val",
+        "name": "image933.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image893.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image948.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image904.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image911.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image966.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image958.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image918.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image960.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image912.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image928.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image978.jpg"
+      },
+      {
+        "split": "train",
+        "name": "image975.jpg"
+      }
+    ],
+    "remaining": {
+      "train": 1029,
+      "val": 131,
+      "test": 141
+    },
+    "limitation": "Conservative similarity filtering. No original camera/scene identifiers are available; scene independence is not established."
+  },
+  "scope": "Public dataset test split after exact/perceptual duplicate checks. Scene independence is unverified. This does not measure site-camera performance, event accuracy, or correct PPE wearing."
+}

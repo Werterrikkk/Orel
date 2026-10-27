@@ -1,0 +1,62 @@
+{
+  "checked_on": "2026-10-22",
+  "backend_tests": {
+    "passed": 96,
+    "warnings": 0
+  },
+  "browser_tests": {
+    "passed": 18,
+    "skipped": 0,
+    "chrome": 16,
+    "webkit": 2
+  },
+  "checks": [
+    "Ruff",
+    "Python formatting",
+    "Prettier",
+    "TypeScript and Vite build",
+    "Git whitespace",
+    "axe-core checks on Telegram setup and existing tested screens",
+    "Local runtime health and preservation of prior videos/events"
+  ],
+  "temporal_filter": {
+    "minimum_positive_observations": 6,
+    "minimum_seconds": 2,
+    "window_seconds": 3,
+    "minimum_support_fraction": 0.8,
+    "maximum_sample_fps": 10,
+    "clear_minimum_observations": 3,
+    "clear_minimum_seconds": 0.6,
+    "critical_seconds_from_support_onset": 10,
+    "critical_fresh_supporting_observations": 3
+  },
+  "telegram": {
+    "real_delivery_verified": false,
+    "bot_account_created_by_agent": false,
+    "live_configuration_present": false,
+    "test_transport": "Injected fake Bot API in unit/API tests; test-only endpoint mocks in browser setup checks",
+    "verified_cases": [
+      "Unconfigured/disabled bot never sends",
+      "Confirmed camera event queues only after temporal evidence",
+      "Slow HTTP delivery does not block camera frames",
+      "Actual confirming/escalating JPEG bytes uploaded as multipart",
+      "Once per event and severity; 30 second per-zone/type/level cooldown",
+      "Red supersedes an unsent warning",
+      "Rate-limit delay and bounded retries",
+      "Uncertain delivery and interrupted sends never automatically repeated",
+      "Recipient changes cancel old pending jobs",
+      "Five-minute expiry and temporary photo cleanup",
+      "Token file mode 0600; API/validation/network errors redact secrets",
+      "Explicit chat selection and labelled test send UI"
+    ],
+    "real_setup_required": "Create bot in BotFather, connect its token locally, press Start, choose chat, enable and test."
+  },
+  "weights_sha256": "166f3a7a9438e3d346167b1e2aae3ec4b38eb5aef2ded148083b81e50bae7275",
+  "retraining_performed": false,
+  "limitations": [
+    "Temporal filtering reduces intermittent errors; persistent model mistakes remain possible.",
+    "No real bot credentials were supplied, so external Telegram delivery still requires the manual test.",
+    "Virtual camera photographs test the actual model pipeline, not physical camera/scene accuracy.",
+    "No real Rubetek hardware or SDK integration has been verified."
+  ]
+}

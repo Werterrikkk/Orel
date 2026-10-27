@@ -1,0 +1,56 @@
+{
+  "checked_at": "2026-10-21T10:46:56.700965+00:00",
+  "backend_tests": {
+    "passed": 49,
+    "warnings": 0
+  },
+  "browser_tests": {
+    "passed": 12,
+    "skipped": 0
+  },
+  "accessibility": {
+    "tool": "axe-core/playwright",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21aa"
+    ],
+    "tested_widths": [
+      390,
+      768,
+      1024,
+      1512
+    ],
+    "violations": 0,
+    "scope": "Tested views and forms; not a full accessibility certification."
+  },
+  "checks": [
+    "Ruff",
+    "Python formatting",
+    "Prettier",
+    "TypeScript + Vite build",
+    "Shell syntax",
+    "Python compileall",
+    "Git whitespace"
+  ],
+  "dependency_audits": {
+    "npm_known_vulnerabilities": 0,
+    "python_known_vulnerabilities": 0
+  },
+  "lifecycle": {
+    "built_ui_http_status": 200,
+    "real_inference_group_sigint": "passed"
+  },
+  "model_weights_sha256": "166f3a7a9438e3d346167b1e2aae3ec4b38eb5aef2ded148083b81e50bae7275",
+  "sample_analysis": {
+    "media_seconds": 24.0,
+    "samples": 120,
+    "preparation_seconds": 3.05,
+    "device": "cpu"
+  },
+  "limitations": [
+    "The sample is an explicitly labelled slideshow of public dataset images.",
+    "No qualification on a real Rubetek camera or facility has been performed.",
+    "Public image metrics do not measure event accuracy or identity."
+  ]
+}

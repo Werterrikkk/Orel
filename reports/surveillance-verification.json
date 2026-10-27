@@ -1,0 +1,50 @@
+{
+  "checked_on": "2026-10-22",
+  "backend_tests": {
+    "passed": 72,
+    "warnings": 0
+  },
+  "browser_tests": {
+    "passed": 16,
+    "skipped": 0,
+    "chrome": 14,
+    "webkit": 2
+  },
+  "checks": [
+    "Ruff",
+    "Python formatting",
+    "Prettier",
+    "TypeScript and Vite build",
+    "Git whitespace",
+    "axe-core accessibility in tested views",
+    "Real model digest matches active weights"
+  ],
+  "model_weights_sha256": "166f3a7a9438e3d346167b1e2aae3ec4b38eb5aef2ded148083b81e50bae7275",
+  "retraining_performed": false,
+  "verified_behaviors": [
+    "Viewport-filling surveillance and native fullscreen entry/exit",
+    "Russian labels on person, helmet and vest detections",
+    "Single forbidden zone drawn on video or entered numerically; settings persist",
+    "Immediate yellow PPE and danger-zone alerts with independent per-track timers",
+    "Red escalation after ten seconds with real model input",
+    "One event per episode; escalation updates same record; review and snapshot access",
+    "Unknown PPE, source gaps, missing people and ambiguous association reset affected timers",
+    "No camera audio, single frame request in flight, late permission cleanup and track shutdown",
+    "Transport staleness clears live boxes and warnings",
+    "WebKit MediaStream playback and manual fallback after autoplay denial",
+    "Old-server version message and connection recovery"
+  ],
+  "runtime": {
+    "url": "http://127.0.0.1:8127",
+    "restarted_local_server": true,
+    "previous_video_ids_preserved": true,
+    "rubetek_available": false
+  },
+  "limitations": [
+    "Chrome virtual camera and WebKit canvas use public test photographs; no fabricated inference results.",
+    "Virtual streams validate the software pipeline, not physical webcam behavior or moving-scene tracking accuracy.",
+    "No Rubetek camera model or SDK is available; native integration, model compilation and camera installation are unverified.",
+    "IoU track hints are not identities; continuity can fail on motion or occlusion.",
+    "No facility qualification."
+  ]
+}

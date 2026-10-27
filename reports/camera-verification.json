@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-21T13:54:08.410965+00:00",
+  "scope": "Local browser webcam with existing trained YOLO26n weights",
+  "model_weights_sha256": "166f3a7a9438e3d346167b1e2aae3ec4b38eb5aef2ded148083b81e50bae7275",
+  "retraining_performed": false,
+  "backend_tests": {
+    "passed": 58,
+    "warnings": 0
+  },
+  "browser_tests": {
+    "passed": 18,
+    "skipped": 0,
+    "camera_scenarios": 6
+  },
+  "checks": [
+    "Ruff",
+    "Python formatting",
+    "Prettier",
+    "TypeScript and Vite build",
+    "Git whitespace"
+  ],
+  "camera_checks": [
+    "Real YOLO predictions from browser JPEG capture, with helmet present then missing",
+    "Model digest matches active trained weights",
+    "One frame request in flight, with increasing sequence numbers",
+    "Confirmed event saved with matching snapshot and model metadata",
+    "No audio tracks",
+    "Permission denied and permission cancellation cleanup",
+    "Stopping capture and leaving camera page release tracks and session",
+    "Old results hidden during stalled transport, then recovery",
+    "Ended media track clears results and permits restart",
+    "axe-core checks on camera page, including 390 px layout"
+  ],
+  "fixture": {
+    "source": "Public Construction-PPE test photos",
+    "helmet_present": "Prepared demo.mp4 seconds 6-11",
+    "helmet_missing": "data/datasets/ppe3/images/test/image1120.jpg",
+    "transport": "Chrome virtual camera using local Y4M; real backend inference, no fabricated browser detections"
+  },
+  "limitations": [
+    "Physical MacBook camera with a person wearing/removing a real helmet has not been tested.",
+    "The public-image virtual stream is a pipeline check, not an accuracy or motion benchmark.",
+    "A distant unhelmeted person was missed in the group fixture; webcam demo should show head and torso clearly.",
+    "No facility or Rubetek camera qualification.",
+    "Webcam checks the whole frame for PPE; work permits are not evaluated in this mode."
+  ]
+}

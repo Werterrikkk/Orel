@@ -1,0 +1,76 @@
+{
+  "evaluated_at": "2026-10-22T23:29:01.728848+00:00",
+  "source_branch": "codex/first-prototype",
+  "source_commit": "ec88b57ab1a31baf1e70b06701a46f7dd418e4cf",
+  "model": "YOLO26n newly fine-tuned for person/helmet/vest",
+  "weights_sha256": "c64f9e1c7ce09ea1594cbb797f19ca3be3febc776597677904cdf18d4ae711db",
+  "classes": {
+    "0": "person",
+    "1": "helmet",
+    "2": "vest"
+  },
+  "metrics": {
+    "metrics/precision(B)": 0.8965405670698248,
+    "metrics/recall(B)": 0.8463883469270113,
+    "metrics/mAP50(B)": 0.8992213826110302,
+    "metrics/mAP50-95(B)": 0.5248476310314606,
+    "fitness": 0.5248476310314606
+  },
+  "per_class": {
+    "person": {
+      "precision": 0.8362082326428476,
+      "recall": 0.8050847457627118,
+      "AP50": 0.8475530626040031,
+      "AP50_95": 0.49149409378432657
+    },
+    "helmet": {
+      "precision": 0.9662578507698235,
+      "recall": 0.8948956999601198,
+      "AP50": 0.9312551025257775,
+      "AP50_95": 0.504480272543422
+    },
+    "vest": {
+      "precision": 0.8871556177968033,
+      "recall": 0.8391845950582023,
+      "AP50": 0.9188559827033099,
+      "AP50_95": 0.578568526766633
+    }
+  },
+  "dataset": {
+    "method": "64-bit DCT perceptual hash; Hamming distance <= 8",
+    "remaining": {
+      "train": 1029,
+      "val": 131,
+      "test": 141
+    },
+    "limitation": "Conservative similarity filtering. No original camera/scene identifiers are available; scene independence is not established.",
+    "excluded_count": 115
+  },
+  "training_report": {
+    "model": "YOLO26n",
+    "classes": {
+      "0": "person",
+      "1": "helmet",
+      "2": "vest"
+    },
+    "epochs_requested": 15,
+    "seconds": 799.81,
+    "device": "mps",
+    "initial_weights_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "metrics": {
+      "metrics/precision(B)": 0.8782109476356444,
+      "metrics/recall(B)": 0.7989817271096585,
+      "metrics/mAP50(B)": 0.8555122908093021,
+      "metrics/mAP50-95(B)": 0.4853353656774922,
+      "fitness": 0.4853353656774922
+    },
+    "scope": "Validation on the public dataset; not qualification on a real facility camera.",
+    "best_weights": "models/runs/ppe-20261022T231530Z/weights/best.pt"
+  },
+  "runtime": {
+    "python": "3.13.7",
+    "torch": "2.14.1",
+    "device": "mps"
+  },
+  "scope": "Held-out public image split after duplicate filtering. Scene independence is unverified. Not a facility accuracy or event/tracking benchmark."
+}
